@@ -1,12 +1,90 @@
 /* Tag Customize */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	box-sizing: border-box;
+}
+body{
+    background-color: #ffff;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 100%;
+    min-height: 100vh;
+}
+button{
+    cursor: pointer;
+}
 form{
     width: 100%;
 }
-strong {
+header, section{
+    display: block;
+}
+header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+header > h1{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+header > h2{
+    font-weight: 500;
+}
+html:focus-within {
+	scroll-behavior: smooth;
+}
+input[type="number"]{
+    border: 2px solid rgba(51, 51, 51, 0.2);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 0.7rem;
+    width: 100%;
+}
+input[type="number"]:focus {
+	outline: 2px solid rgba(51, 51, 51, 0.4);
+}
+label{
+    font-weight: 600;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5em 2rem;
+}
+strong{
 	font-weight: 700;
 }
+
 /* Class Customize */
-/* Display */
+.btn-submit{
+    background-color: rgb(101, 88, 245);
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 0.5rem 1rem;
+}
+.btn-submit:hover{
+    filter: brightness(0.9);
+}
+.btn-submit:focus{
+    outline: 1px solid rgba(101, 88, 245, 0.8);;
+}
+.hidden{
+    visibility: hidden;
+}
 .flex-content{
     display: flex;
     justify-content: center;
@@ -17,17 +95,40 @@ strong {
     flex-direction: column;
     margin: 1rem 0 1rem 0;
 }
-.hidden{
-    visibility: hidden;
-}
-
 #result {
 	text-align: left;
 	margin-top: 2.5em;
 }
-
-#result > h2 {
+#result > h3 {
 	font-weight: 500;
 	color: rgba(51, 51, 51, 0.9);
-	font-size: 1rem;
+	font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+	main {
+		margin: auto;
+		width: 80%;
+	}
+}
+@media screen and (min-width: 1024px) {
+	main {
+		width: 70%;
+	}
+	label {
+		font-size: 1.15rem;
+	}
+	#result > h2 {
+		font-size: 1.115rem;
+	}
+
+	.btn-submit {
+		font-size: 1.125rem;
+	}
+}
+@media screen and (min-width: 1280px) {
+	main {
+		width: 50%;
+	}
 }

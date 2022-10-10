@@ -12,7 +12,10 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header class="flex-content">
+        <h1>Check your BMI</h1>
+        <h2>Enter your weight and height below to check your BMI results</h2>
+    </header>
     <main>
         <form>
             <!-- Input Weight Label -->
@@ -25,14 +28,16 @@
                 <label for="height">And your height in here (CM)</label>
                 <input type="number" id="height" name="height" placeholder="Input your height" min="0" step="any" required>
             </div>
+            <!-- Calculate Button -->
             <!-- Submit Button -->
-            <button class="submit" type="submit">Calculate BMI</button>
+            <button class="btn-submit" type="submit">Calculate BMI</button>
         </form>
-        
+        <!-- Result Calculate -->
         <section id="result">
-            <h2 class="hidden">Your BMI is <strong id="bmi-value">40</strong> which means You are <strong id="bmi-type">Normal</strong></h2>
+            <h3 class="hidden">Your BMI is <strong id="bmi-value"></strong> which means You are <strong id="bmi-type"></strong></h3>
         </section>
     </main>
+    <!-- Script JS -->
     <script src="../src/script.js" type="module"></script>
 </body>
 </html>
