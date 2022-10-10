@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../src/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form>
+            <!-- Input Weight Label -->
+            <div class="form-control">
+                <label for="weight">Put your weight in here (KG)</label>
+                <input type="number" id="weight" name="weight" placeholder="Input your weight" min="0" step="any" required>
+            </div>
+            <!-- Input Height Label -->
+            <div class="form-control">
+                <label for="height">And your height in here (CM)</label>
+                <input type="number" id="height" name="height" placeholder="Input your height" min="0" step="any" required>
+            </div>
+            <!-- Submit Button -->
+            <button class="submit" type="submit">Calculate BMI</button>
+        </form>
+        
+        <section id="result">
+            <h2 class="hidden">Your BMI is <strong id="bmi-value">40</strong> which means You are <strong id="bmi-type">Normal</strong></h2>
+        </section>
+    </main>
+    <script src="../src/script.js" type="module"></script>
+</body>
+</html>

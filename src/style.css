@@ -1,0 +1,33 @@
+/* Tag Customize */
+form{
+    width: 100%;
+}
+strong {
+	font-weight: 700;
+}
+/* Class Customize */
+/* Display */
+.flex-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+}
+.hidden{
+    visibility: hidden;
+}
+
+#result {
+	text-align: left;
+	margin-top: 2.5em;
+}
+
+#result > h2 {
+	font-weight: 500;
+	color: rgba(51, 51, 51, 0.9);
+	font-size: 1rem;
+}
