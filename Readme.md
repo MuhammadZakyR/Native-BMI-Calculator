@@ -6,7 +6,7 @@ https://github.com/impactbyte/full-stack-web-assignments/tree/master/TPA-002
 ## Technology
 #### 1. HTML
 #### 2. CSS
-#### 3. JS
+#### 3. JavaScript
 
 ## Demo Website
 https://bmi-calculator-v-1.netlify.app
